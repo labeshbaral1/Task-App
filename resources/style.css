@@ -1,0 +1,196 @@
+/* Colors */
+
+:root{
+   --background: #F5F5F5;
+   --orange: #FF9100;
+   --purple: #5C6BC0;
+   --green: #67BB6B;
+   --blue: #2096F3;
+   --lightblue: #69BCFF;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: bold;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Body */
+
+body{
+background-color: var(--background);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+
+
+.mid{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+}
+
+nav .item{
+    margin: 10px;
+    padding: 8px 70px;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+
+}
+
+nav .item:hover{   
+    cursor: pointer; 
+}
+
+.dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+#all-dot{
+    background-color: var(--lightblue);
+}
+#home-dot{
+    background-color: var(--orange);
+}
+#work-dot{
+    background-color: var(--purple);
+}
+#personal-dot{
+    background-color: var(--green);
+}
+
+
+.click-all{
+    box-sizing: border-box;
+    background-color: var(--lightblue);
+    border-radius: 5px;
+    color: white;
+}
+.click-home{
+    box-sizing: border-box;
+    background-color: var(--orange);
+    border-radius: 5px;
+    color: white;
+}
+.click-work{
+    box-sizing: border-box;
+    background-color: var(--purple);
+    border-radius: 5px;
+    color: white;
+}
+.click-personal{
+    box-sizing: border-box;
+    background-color: var(--green);
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+#addNote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    width: 130px;
+    height: 40px;
+    background-color: var(--blue);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+
+}
+
+#addNote span{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+
+
+.hide{
+    display: none;
+}
+
+.increase-size{
+    font-size: 30px;
+}
+
+
+[data-tab-content]{
+    display: none;    
+}
+
+
+
+
+.removeButton{
+    height: 40px;
+    width: auto;
+
+    cursor: pointer;
+}
+
+
+
+.display{
+    padding: 15px 10px;
+    width:30%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.display-task{
+    font-size: 35px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.display-description{
+    color: white;
+
+}
+
+.all-display{
+    background-color: var(--lightblue);
+}
+.home-display{
+    background-color: var(--orange);
+}
+.work-display{
+    background-color: var(--purple);
+}
+.personal-display{
+    background-color: var(--green);
+}
+
